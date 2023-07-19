@@ -10,12 +10,5 @@ sha256 = "fb02c86e358cd9aad8d4dfa957ee502381e7ee2e94499a9133add4324b6ce69a"
 
 
 def do_install(self):
-    for f in (self.cwd / "HarmonyOS Sans/HarmonyOS_Sans").glob("*.ttf"):
+    for f in (self.cwd / "HarmonyOS Sans/HarmonyOS_Sans*").glob("*.ttf"):
         self.install_file(f, "usr/share/fonts/harmonyos-sans")
-    for f in (self.cwd / "HarmonyOS Sans/HarmonyOS_Sans_Condensed").glob("*.ttf"):
-        self.install_file(f, "usr/share/fonts/harmonyos-sans")
-    for f in (self.cwd / "HarmonyOS Sans/HarmonyOS_Sans_Condensed_Italic").glob("*.ttf"):
-        self.install_file(f, "usr/share/fonts/harmonyos-sans")
-    for f in (self.cwd / "HarmonyOS Sans/HarmonyOS_Sans_Naskh_Arabic").glob("*.ttf"):
-        self.install_file(f, "usr/share/fonts/harmonyos-sans")
-    for f in (self.cwd / "Har
